@@ -237,7 +237,7 @@ body {
 }
 
 /* About section */
-.about,
+/* .about, */
 .menu,
 .contact,
 .business,
@@ -249,7 +249,6 @@ body {
   padding: 8rem 7% 1.4rem;
 }
 
-.about h2,
 .service h2,
 .menu h2,
 .contact h2 {
@@ -263,10 +262,6 @@ body {
 .menu h2 span,
 .contact h2 span {
   color: var(--primary);
-}
-
-.about .row {
-  display: flex;
 }
 
 .about .row .about-img {
@@ -297,6 +292,149 @@ body {
   font-weight: 100;
   line-height: 1.6;
 }
+
+.about {
+  padding: 5rem 7% 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about,
+.overview {
+  padding: 5rem 7% 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about h2,
+.overview h2,
+.business h2,
+.philosophy h2 {
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+
+.about h3,
+.overview h3 {
+  text-align: center;
+  font-weight: 400;
+}
+
+.business,
+.philosophy {
+  display: flex;
+  flex-direction: column;
+}
+
+.business-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.philosophy-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.philosophy-container > div > p {
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.business-list > li {
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.philosophy-list > li {
+  margin-left: 1rem;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.photo-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  align-items: center;
+}
+
+.menu-card-img {
+  max-width: 250px;
+  min-width: 250px;
+  height: auto;
+  object-fit: scale-down;
+  column-span: 1;
+}
+
+.partners h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+
+.hero-service {
+  height: 100%;
+}
+
+.hero-service-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.hero-service-container > p {
+  font-size: 1.3rem;
+  text-align: center;
+  max-width: 70%;
+  margin: 2rem auto 0 auto;
+}
+
+.internet-img,
+.enterprise-img {
+  width: 50rem;
+  height: auto;
+  object-fit: cover;
+  margin: auto;
+}
+
+.internet h2,
+.enterprise h2 {
+  font-size: 2.6rem;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.internet > ol > li,
+.enterprise > ol > li {
+  font-size: 1.1rem;
+  margin-left: 1rem;
+}
+
+.internet > ol > p,
+.enterprise > ol > p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.internet > ol > ul,
+.enterprise > ol > ul {
+  font-size: 1.1rem;
+  margin: 0 0 1rem 2rem;
+  text-align: justify;
+}
+
 /* media Queries */
 
 /* Lapotop */
@@ -404,7 +542,7 @@ body {
 .contact .row {
   display: flex;
   margin-top: 2rem;
-  background-color: #222;
+  /* background-color: #222; */
 }
 
 .contact .row .map {
