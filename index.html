@@ -1,354 +1,683 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PT Akses Connecting Nusaraya</title>
+    <meta charset="utf-8" />
+    <title>Akcon Website</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon" />
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700"
       rel="stylesheet"
     />
 
-    <!-- feather-icons-->
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
 
-    <!-- My styles-->
-
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet" />
   </head>
+
   <body>
-    <!-- Navbar start-->
-    <nav class="navbar">
-      <div class="navbar-nav">
-        <div class="dropdown-home">
-          <div class="home-menu">
-            <a href="#home">Home</a>
-            <i data-feather="chevron-down"></i>
-          </div>
-          <div class="dropdown-home-content">
-            <a href="#about"> About Us </a>
-            <a href="#overview"> Overwiew </a>
-            <a href="#business"> Our Business </a>
-            <a href="#partners"> Our Partners </a>
-            <a href="#philosophy"> Our Philosophy </a>
-          </div>
-        </div>
-        <div>
-          <div class="dropdown-service">
-            <div class="service-menu">
-              <a href="service.html">Service</a>
-              <i data-feather="chevron-down"></i>
-            </div>
-            <div class="dropdown-service-content">
-              <a href="#tower"> Tower Telco </a>
-              <a href="#internet"> Internet Connectivity </a>
-              <a href="#enterprise"> Enterprise System </a>
-            </div>
-          </div>
+    <!--==========================
+  Header
+  ============================-->
+    <header id="header">
+      <div class="container">
+        <div id="logo" class="pull-left">
+          <a href="#hero"
+            ><img
+              src="img/akcon-putih.png"
+              alt="logo"
+              title=""
+              class="logo-img"
+          /></a>
         </div>
 
-        <div>
-          <a href="#menu">Menu</a>
-        </div>
-
-        <div>
-          <a href="#contact">Kontak</a>
-        </div>
-
-        <div>
-          <a href="#webmail"> Webmail</a>
-        </div>
-      </div>
-
-      <div class="navbar-extra">
-        <a href="#" id="search"> <i data-feather="search"></i></a>
-        <a href="#" id="hamburger-menu"> <i data-feather="menu"></i></a>
-      </div>
-    </nav>
-
-    <!-- <div class="container">
-      <div class="button_container" id="toggle">
-        <span class="top"></span>
-        <span class="middle"></span>
-        <span class="bottom"></span>
-      </div>
-      <div class="overlay" id="overlay">
-        <nav class="overlay-menu">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact</a></li>
+        <nav id="nav-menu-container">
+          <ul class="nav-menu">
+            <li class="menu-active"><a href="#hero">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#team">Team</a></li>
+            <li class="menu-has-children">
+              <a href="">Drop Down</a>
+              <ul>
+                <li><a href="#">Drop Down 1</a></li>
+                <li class="menu-has-children">
+                  <a href="#">Drop Down 2</a>
+                  <ul>
+                    <li><a href="#">Deep Drop Down 1</a></li>
+                    <li><a href="#">Deep Drop Down 2</a></li>
+                    <li><a href="#">Deep Drop Down 3</a></li>
+                    <li><a href="#">Deep Drop Down 4</a></li>
+                    <li><a href="#">Deep Drop Down 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Drop Down 3</a></li>
+                <li><a href="#">Drop Down 4</a></li>
+                <li><a href="#">Drop Down 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#contact">Contact Us</a></li>
           </ul>
         </nav>
+        <!-- #nav-menu-container -->
       </div>
-    </div> -->
+    </header>
+    <!-- #header -->
 
-    <!-- Navbar end-->
-
-    <!-- Hero section star-->
-    <section class="hero" id="home">
+    <!--==========================
+    Hero Section
+  ============================-->
+    <section id="hero">
       <div class="hero-container">
-        <div>
-          <img src="./img/akcon-putih.png" alt="logo" class="logo-image" />
+        <h1>Welcome to Akcon</h1>
+        <h2>
+          We are team of talanted designers making websites with Bootstrap
+        </h2>
+        <a href="#about" class="btn-get-started">Get Started</a>
+      </div>
+    </section>
+    <!-- #hero -->
+
+    <main id="main">
+      <!--==========================
+      About Us Section
+    ============================-->
+      <section id="about">
+        <div class="container">
+          <div class="row about-container">
+            <div class="col-lg-6 content order-lg-1 order-2">
+              <h2 class="title">Few Words About Us</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+
+              <div class="icon-box wow fadeInUp">
+                <div class="icon"><i class="fa fa-shopping-bag"></i></div>
+                <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+                <p class="description">
+                  Et harum quidem rerum facilis est et expedita distinctio. Nam
+                  libero tempore, cum soluta nobis est eligendi
+                </p>
+              </div>
+
+              <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+                <div class="icon"><i class="fa fa-photo"></i></div>
+                <h4 class="title"><a href="">Magni Dolores</a></h4>
+                <p class="description">
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia deserunt mollit anim id est laborum
+                </p>
+              </div>
+
+              <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
+                <div class="icon"><i class="fa fa-bar-chart"></i></div>
+                <h4 class="title"><a href="">Dolor Sitema</a></h4>
+                <p class="description">
+                  Minim veniam, quis nostrud exercitation ullamco laboris nisi
+                  ut aliquip ex ea commodo consequat tarad limino ata
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-6 background order-lg-2 order-1 wow fadeInRight"
+            ></div>
+          </div>
         </div>
-        <div class="content">
-          <h1>PT AKSES CONNECTING NUSARAYA</h1>
-          <h2>UNDER CONATRUSCTION</h2>
-          <p>
-            Continous innovation and collaboration with our business partners
-            form the basis for creating high-qualiity colutions that meet the
-            needs of global customers, while upholding social and environmental
-            responsibility
-          </p>
+      </section>
+      <!-- #about -->
+
+      <!--==========================
+      Facts Section
+    ============================-->
+      <section id="facts">
+        <div class="container wow fadeIn">
+          <div class="section-header">
+            <h3 class="section-title">Facts</h3>
+            <p class="section-description">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque
+            </p>
+          </div>
+          <div class="row counters">
+            <div class="col-lg-3 col-6 text-center">
+              <span data-toggle="counter-up">232</span>
+              <p>Clients</p>
+            </div>
+
+            <div class="col-lg-3 col-6 text-center">
+              <span data-toggle="counter-up">521</span>
+              <p>Projects</p>
+            </div>
+
+            <div class="col-lg-3 col-6 text-center">
+              <span data-toggle="counter-up">1,463</span>
+              <p>Hours Of Support</p>
+            </div>
+
+            <div class="col-lg-3 col-6 text-center">
+              <span data-toggle="counter-up">15</span>
+              <p>Hard Workers</p>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <!-- #facts -->
 
-    <!-- Hero section home-->
+      <!--==========================
+      Services Section
+    ============================-->
+      <section id="services">
+        <div class="container wow fadeIn">
+          <div class="section-header">
+            <h3 class="section-title">Services</h3>
+            <p class="section-description">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+              <div class="box">
+                <div class="icon">
+                  <a href=""><i class="fa fa-desktop"></i></a>
+                </div>
+                <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+                <p class="description">
+                  Voluptatum deleniti atque corrupti quos dolores et quas
+                  molestias excepturi sint occaecati cupiditate non provident
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+              <div class="box">
+                <div class="icon">
+                  <a href=""><i class="fa fa-bar-chart"></i></a>
+                </div>
+                <h4 class="title"><a href="">Dolor Sitema</a></h4>
+                <p class="description">
+                  Minim veniam, quis nostrud exercitation ullamco laboris nisi
+                  ut aliquip ex ea commodo consequat tarad limino ata
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+              <div class="box">
+                <div class="icon">
+                  <a href=""><i class="fa fa-paper-plane"></i></a>
+                </div>
+                <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+                <p class="description">
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur
+                </p>
+              </div>
+            </div>
 
-    <!-- About section star-->
-    <section id="about" class="about">
-      <h2>About Us</h2>
-      <h3>
-        PT Akses Connecting Nusaraya (AKCON) adalah perusahan yang bergerak
-        dalam layanan industri Telekomunikasi dan connectivity. Dibidang
-        telekomunikasi AKCON memberikan layanan SITAC (Site Acquisition) , CME (
-        Civil, Mechanical, Electrical ), Manajemen Proyek dan Pemeliharaan serta
-        layanan Sistem Perusahaan. Dibidang connectivity AKCON adalah perusahaan
-        yang beroperasi sebagai partner resseler resmi starlink di indonesia,
-        AKCON bersama resseler resmi Starlink menawarkan produk unggulan bernama
-        SKYLINK, menyediakan layanan internet satelit berkecepatan tinggi dan
-        andal yang dirancang khusus untuk memenuhi kebutuhan berbagai industri
-        di Indonesia, termasuk maritim, transportasi, perkebunan, minyak dan
-        gas, pertambangan, penerbangan, pemerintah, telekomunikasi, media, dan
-        ritel.
-      </h3>
-      <p></p>
-    </section>
-    <!-- About section end-->
-
-    <!-- Company Overview section start -->
-    <section id="overview" class="overview">
-      <h2>COMPANY OVERVIEW</h2>
-      <h3>
-        PT AKSES CONNECTING NUSARAYA (AKCON), was established in January 2024.
-        Starting from high trust in partnering with telecommunications service
-        providers, both national and multinational, in developing their networks
-        in Indonesia so that they are ready to welcome rapid dynamics and
-        technological innovation.
-      </h3>
-      <h3>
-        Akcon is a company that specializes in telecommunications industry
-        services, especially Site Acquisition (SITAC) services, CME (civil,
-        mechanical and electrical),Project Management and Maintenance as well
-        services of Enterprise System. We have gathered professionals in their
-        respective fields into one strong, solid and experienced AKCON Team who
-        are ready to drive the company's business wheels.
-      </h3>
-    </section>
-    <!-- Company Overview section end -->
-
-    <!-- Business section start -->
-    <section id="business" class="business">
-      <h2>Our Business</h2>
-      <div class="business-container">
-        <img src="img/ourbusiness.jpg" alt="Tentang Kami" />
-        <ol class="business-list">
-          <li>
-            SITE ACQUISITION (SITAC) As a company that will continue to develop
-            with high dynamics and innovation, AKCON is proud to present our
-            Site Acquisition (SITAC) service, which is specifically designed to
-            support the development of 4G and 5G telecommunications technology.
-          </li>
-          <li>
-            CME AKCON also handles civil, mechanical and electrical
-            telecommunication tower construction work according to customer
-            needs
-          </li>
-          <li>
-            PROJECT MANAGEMENT AKCON Projects manages the entire process to
-            enable efficient and effective implementation of services
-          </li>
-          <li>
-            ENTERPRISE SYSTEM AKCON also provides services of Enterprise System
-            such as : Connectivity Business, Security, Digital Analytics, Data
-            Center & Cloud, Internet of Things and Digital Tools & Application
-            Business
-          </li>
-        </ol>
-      </div>
-    </section>
-    <!-- Business section end -->
-
-    <!-- Philosophy section start -->
-    <section id="philosophy" class="philosophy">
-      <h2><span> Our Philosophy</span></h2>
-      <div class="philosophy-container">
-        <div>
-          <h3>VISION</h3>
-          <p>
-            Become a dynamic and innovative company, become a partner of
-            telecommunications service companies and provide sustainable added
-            value for all communities and stakeholders.
-          </p>
-          <br />
-          <h3>MISSION</h3>
-          <ol class="philosophy-list">
-            <li>
-              Building and operating a business that is sustainable and provides
-              mutual benefits and profits.
-            </li>
-            <li>
-              Develop high quality services that meet customer needs and
-              expectations.
-            </li>
-            <li>
-              Drive research and development to create better and more efficient
-              solutions.
-            </li>
-            <li>
-              Establish strategic partnerships with strong business partners and
-              build an extensive global network.
-            </li>
-            <li>
-              Prioritizing social and environmental responsibility in all
-              aspects of the company's operations. Creating a work environment
-              that is inclusive,
-            </li>
-            <li>
-              That is inclusive, colaborative and enable employees proferssional
-              and personal development.
-            </li>
-          </ol>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+              <div class="box">
+                <div class="icon">
+                  <a href=""><i class="fa fa-photo"></i></a>
+                </div>
+                <h4 class="title"><a href="">Magni Dolores</a></h4>
+                <p class="description">
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia deserunt mollit anim id est laborum
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+              <div class="box">
+                <div class="icon">
+                  <a href=""><i class="fa fa-road"></i></a>
+                </div>
+                <h4 class="title"><a href="">Nemo Enim</a></h4>
+                <p class="description">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis praesentium voluptatum deleniti atque
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+              <div class="box">
+                <div class="icon">
+                  <a href=""><i class="fa fa-shopping-bag"></i></a>
+                </div>
+                <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+                <p class="description">
+                  Et harum quidem rerum facilis est et expedita distinctio. Nam
+                  libero tempore, cum soluta nobis est eligendi
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <img src="img/visi-misi-dan-moto.png" alt="Tentang Kami" />
-      </div>
-    </section>
-    <!-- Philosophy section end -->
+      </section>
+      <!-- #services -->
 
-    <!-- Menu section Start-->
-    <section id="partners" class="partners">
-      <h2>OUR PARTNER</h2>
-      <div class="photo-container">
-        <img
-          src="img/transparan-kemendes.png"
-          alt="EDOTCO"
-          :
-          class="menu-card-img"
-        />
-        <img src="img/Edotco.png" alt="EDOTCO" : class="menu-card-img" />
-        <img src="img/Starlink.png" alt="EDOTCO" : class="menu-card-img" />
-        <img src="img/Labuan-Bajo.png" alt="EDOTCO" : class="menu-card-img" />
-        <img
-          src="img/PT.Pam_mineral.png"
-          alt="EDOTCO"
-          :
-          class="menu-card-img"
-        />
-        <img src="img/Fiberhome.png" alt="EDOTCO" : class="menu-card-img" />
-        <img src="img/IOH.png" alt="EDOTCO" : class="menu-card-img" />
-        <img src="img/Skylink.png" alt="EDOTCO" : class="menu-card-img" />
-      </div>
-      <div style="display: flex; justify-content: center; width: 100%">
-        <img
-          src="img/transparan-kemenparekraf.png"
-          alt="EDOTCO"
-          :
-          class="menu-card-img"
-          style="display: flex; justify-self: center"
-        />
-      </div>
-    </section>
-    <!-- Menu section End-->
+      <!--==========================
+    Call To Action Section
+    ============================-->
+      <section id="call-to-action">
+        <div class="container wow fadeIn">
+          <div class="row">
+            <div class="col-lg-9 text-center text-lg-left">
+              <h3 class="cta-title">Call To Action</h3>
+              <p class="cta-text">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </p>
+            </div>
+            <div class="col-lg-3 cta-btn-container text-center">
+              <a class="cta-btn align-middle" href="#">Call To Action</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #call-to-action -->
 
-    <!-- Contact menu Start -->
+      <!--==========================
+      Portfolio Section
+    ============================-->
+      <section id="portfolio">
+        <div class="container wow fadeInUp">
+          <div class="section-header">
+            <h3 class="section-title">Portfolio</h3>
+            <p class="section-description">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <ul id="portfolio-flters">
+                <li
+                  data-filter=".filter-app, .filter-card, .filter-logo, .filter-web"
+                  class="filter-active"
+                >
+                  All
+                </li>
+                <li data-filter=".filter-app">App</li>
+                <li data-filter=".filter-card">Card</li>
+                <li data-filter=".filter-logo">Logo</li>
+                <li data-filter=".filter-web">Web</li>
+              </ul>
+            </div>
+          </div>
 
-    <section id="contact" class="contact">
-      <h2><span> KONTAK KAMI </span></h2>
-      <p>
-        Kami berkomitmen untuk menciptakan solusi berkualitas tinggi yang
-        memenuhi kebutuhan pelanggan. Misi kami melibatkan pendekatan
-        berkelanjutan untuk mengembangkan dan mengoperasikan bisnis kami.
-      </p>
+          <div class="row" id="portfolio-wrapper">
+            <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+              <a href="">
+                <img src="img/portfolio/app1.jpg" alt="" />
+                <div class="details">
+                  <h4>App 1</h4>
+                  <span>Alored dono par</span>
+                </div>
+              </a>
+            </div>
 
-      <div class="row">
+            <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+              <a href="">
+                <img src="img/portfolio/web2.jpg" alt="" />
+                <div class="details">
+                  <h4>Web 2</h4>
+                  <span>Alored dono par</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+              <a href="">
+                <img src="img/portfolio/app3.jpg" alt="" />
+                <div class="details">
+                  <h4>App 3</h4>
+                  <span>Alored dono par</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+              <a href="">
+                <img src="img/portfolio/card1.jpg" alt="" />
+                <div class="details">
+                  <h4>Card 1</h4>
+                  <span>Alored dono par</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+              <a href="">
+                <img src="img/portfolio/card2.jpg" alt="" />
+                <div class="details">
+                  <h4>Card 2</h4>
+                  <span>Alored dono par</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+              <a href="">
+                <img src="img/portfolio/web3.jpg" alt="" />
+                <div class="details">
+                  <h4>Web 3</h4>
+                  <span>Alored dono par</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+              <a href="">
+                <img src="img/portfolio/card3.jpg" alt="" />
+                <div class="details">
+                  <h4>Card 3</h4>
+                  <span>Alored dono par</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+              <a href="">
+                <img src="img/portfolio/app2.jpg" alt="" />
+                <div class="details">
+                  <h4>App 2</h4>
+                  <span>Alored dono par</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
+              <a href="">
+                <img src="img/portfolio/logo1.jpg" alt="" />
+                <div class="details">
+                  <h4>Logo 1</h4>
+                  <span>Alored dono par</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
+              <a href="">
+                <img src="img/portfolio/logo3.jpg" alt="" />
+                <div class="details">
+                  <h4>Logo 3</h4>
+                  <span>Alored dono par</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+              <a href="">
+                <img src="img/portfolio/web1.jpg" alt="" />
+                <div class="details">
+                  <h4>Web 1</h4>
+                  <span>Alored dono par</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
+              <a href="">
+                <img src="img/portfolio/logo2.jpg" alt="" />
+                <div class="details">
+                  <h4>Logo 2</h4>
+                  <span>Alored dono par</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #portfolio -->
+
+      <!--==========================
+      Team Section
+    ============================-->
+      <section id="team">
+        <div class="container wow fadeInUp">
+          <div class="section-header">
+            <h3 class="section-title">Team</h3>
+            <p class="section-description">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="member">
+                <div class="pic"><img src="img/team-1.jpg" alt="" /></div>
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="member">
+                <div class="pic"><img src="img/team-2.jpg" alt="" /></div>
+                <h4>Sarah Jhinson</h4>
+                <span>Product Manager</span>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="member">
+                <div class="pic"><img src="img/team-3.jpg" alt="" /></div>
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="member">
+                <div class="pic"><img src="img/team-4.jpg" alt="" /></div>
+                <h4>Amanda Jepson</h4>
+                <span>Accountant</span>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #team -->
+
+      <!--==========================
+      Contact Section
+    ============================-->
+      <section id="contact">
+        <div class="container wow fadeInUp">
+          <div class="section-header">
+            <h3 class="section-title">Contact</h3>
+            <p class="section-description">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque
+            </p>
+          </div>
+        </div>
+
+        <!-- Uncomment below if you wan to use dynamic maps -->
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3324.312833533063!2d106.84348591441054!3d-6.263324301465498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3003ad1a051%3A0x2bc627c896bee45b!2sPT.%20AKSES%20CONNECTING%20NUSARAYA%20(AKCON)!5e0!3m2!1sid!2sid!4v1725554497259!5m2!1sid!2sid"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452"
+          width="100%"
+          height="380"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen
         ></iframe>
 
-        <form action="">
-          <div class="input-group">
-            <i data-feather="user"></i>
-            <input type="text" placeholder="Nama" />
-          </div>
-          <div class="input-group">
-            <i data-feather="mail"></i>
-            <input type="text" placeholder="Email" />
-          </div>
+        <div class="container wow fadeInUp mt-5">
+          <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-4">
+              <div class="info">
+                <div>
+                  <i class="fa fa-map-marker"></i>
+                  <p>A108 Adam Street<br />New York, NY 535022</p>
+                </div>
 
-          <div class="input-group">
-            <i data-feather="phone"></i>
-            <input type="text" placeholder="No Hp" />
-          </div>
+                <div>
+                  <i class="fa fa-envelope"></i>
+                  <p>info@example.com</p>
+                </div>
 
-          <button type="submit" class="btn">Kirim Pesan</button>
-        </form>
+                <div>
+                  <i class="fa fa-phone"></i>
+                  <p>+1 5589 55488 55s</p>
+                </div>
+              </div>
+
+              <div class="social-links">
+                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="instagram"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+                <a href="#" class="google-plus"
+                  ><i class="fa fa-google-plus"></i
+                ></a>
+                <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-5 col-md-8">
+              <div class="form">
+                <div id="sendmessage">
+                  Your message has been sent. Thank you!
+                </div>
+                <div id="errormessage"></div>
+                <form action="" method="post" role="form" class="contactForm">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      placeholder="Your Name"
+                      data-rule="minlen:4"
+                      data-msg="Please enter at least 4 chars"
+                    />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      id="email"
+                      placeholder="Your Email"
+                      data-rule="email"
+                      data-msg="Please enter a valid email"
+                    />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="subject"
+                      id="subject"
+                      placeholder="Subject"
+                      data-rule="minlen:4"
+                      data-msg="Please enter at least 8 chars of subject"
+                    />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group">
+                    <textarea
+                      class="form-control"
+                      name="message"
+                      rows="5"
+                      data-rule="required"
+                      data-msg="Please write something for us"
+                      placeholder="Message"
+                    ></textarea>
+                    <div class="validation"></div>
+                  </div>
+                  <div class="text-center">
+                    <button type="submit">Send Message</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #contact -->
+    </main>
+
+    <!--==========================
+    Footer
+  ============================-->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container"></div>
       </div>
-    </section>
-    <!-- Contact menu End -->
 
-    <!-- Footer Start -->
-    <footer>
-      <div class="socials">
-        <a href="#"> <i data-feather="instagram"></i></a>
-        <a href="#"> <i data-feather="twitter"></i></a>
-        <a href="#"> <i data-feather="facebook"></i></a>
-      </div>
-
-      <div class="'credit">
-        <p>
-          Created by <a href="PT.AKCON"></a> | &copy; Pt Akses Connecting
-          Nusaraya 2024.
-        </p>
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong>Akcon</strong>. All Rights Reserved
+        </div>
       </div>
     </footer>
+    <!-- #footer -->
 
-    <!-- Footer end -->
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-    <!-- Jquery -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/superfish/hoverIntent.js"></script>
+    <script src="lib/superfish/superfish.min.js"></script>
 
-    <script>
-      // Toggle navigation overlay
-      $("#toggle").click(function () {
-        console.log("test");
-        $(this).toggleClass("active");
-        $("#overlay").toggleClass("open");
-      });
-    </script>
+    <!-- Contact Form JavaScript File -->
+    <script src="contactform/contactform.js"></script>
 
-    <!-- feather-icons-->
-    <script>
-      feather.replace();
-    </script>
-
-    <!-- my javascript-->
-    <script src="js/script.js"></script>
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
   </body>
 </html>
