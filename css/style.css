@@ -128,15 +128,216 @@ h6 {
 }
 
 #header.header-fixed {
-  background: rgba(52, 59, 64, 0.9);
+  background: rgba(52, 59, 64, 0.6);
+  /* background: transparent; */
   padding: 20px 0;
-  height: 72px;
+  height: 120px;
   transition: all 0.5s;
 }
 
 .logo-img {
   width: auto;
-  height: 48px;
+  height: 78px;
+}
+
+/* Navigation */
+.container-overlay {
+  display: flex;
+  /* position: sticky;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  font-family: "Varela Round", sans-serif; */
+}
+.container-overlay p {
+  font-size: 20px;
+}
+.container-overlay a {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  color: #1abc9c;
+  text-decoration: none;
+  font-size: 20px;
+  overflow: hidden;
+  top: 5px;
+}
+.container-overlay a:after {
+  content: "";
+  position: absolute;
+  background: transparent;
+  height: 2px;
+  width: 0%;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 0;
+  transition: 0.35s ease;
+}
+.container-overlay a:hover:after,
+.container-overlay a:focus:after,
+.container-overlay a:active:after {
+  width: 100%;
+}
+
+h1 {
+  position: relative;
+  text-align: center;
+  font-family: "Varela Round", serif;
+}
+
+.button_container {
+  position: sticky;
+  right: 2%;
+  height: 27px;
+  width: 35px;
+  cursor: pointer;
+  z-index: 100;
+  transition: opacity 0.25s ease;
+}
+.button_container:hover {
+  opacity: 0.7;
+}
+.button_container.active .top {
+  transform: translateY(11px) translateX(0) rotate(45deg);
+  background: #fff;
+}
+.button_container.active .middle {
+  opacity: 0;
+  background: #fff;
+}
+.button_container.active .bottom {
+  transform: translateY(-11px) translateX(0) rotate(-45deg);
+  background: #fff;
+}
+.button_container span {
+  background: #cecece;
+  border: none;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+.button_container span:nth-of-type(2) {
+  top: 11px;
+}
+.button_container span:nth-of-type(3) {
+  top: 22px;
+}
+
+.overlay {
+  position: fixed;
+  background: rgba(0, 0, 0, 1);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+  overflow: hidden;
+}
+.overlay.open {
+  opacity: 0.9;
+  visibility: visible;
+  height: 100%;
+}
+.overlay.open li {
+  animation: fadeInRight 0.5s ease forwards;
+  animation-delay: 0.35s;
+}
+.overlay.open li:nth-of-type(2) {
+  animation-delay: 0.4s;
+}
+.overlay.open li:nth-of-type(3) {
+  animation-delay: 0.45s;
+}
+.overlay.open li:nth-of-type(4) {
+  animation-delay: 0.5s;
+}
+.overlay nav {
+  position: relative;
+  height: 70%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  font-family: "Varela Round", serif;
+  font-weight: 400;
+  text-align: center;
+}
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  height: 100%;
+}
+.overlay ul li {
+  display: block;
+  height: 25%;
+  height: calc(100% / 4);
+  min-height: 50px;
+  position: relative;
+  opacity: 0;
+}
+.overlay ul li a {
+  display: block;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  overflow: hidden;
+}
+.overlay ul li a:hover:after,
+.overlay ul li a:focus:after,
+.overlay ul li a:active:after {
+  width: 100%;
+}
+.overlay ul li a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  transform: translateX(-50%);
+  height: 3px;
+  background: #fff;
+  transition: 0.35s;
+}
+
+nav > ul {
+  display: grid;
+  grid-template-columns: 1fr repeat(2, 300px);
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+nav {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  opacity: 100%;
+}
+
+nav > .fa {
+  font-size: 2rem !important; /*size whatever you like*/
+  padding: 1rem;
+  color: grey;
+  cursor: pointer;
 }
 
 /*--------------------------------------------------------------
@@ -145,7 +346,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url(../img/hero-bg.webp) top center;
+  background: url(../img/hero-bg.jpeg) top center;
   background-size: cover;
   position: relative;
 }
@@ -220,9 +421,17 @@ h6 {
   padding: 8px 28px;
   border-radius: 50px;
   transition: 0.5s;
-  margin: 10px;
   border: 2px solid #fff;
   color: #fff;
+}
+
+.hero-content {
+  position: absolute;
+  left: 12%;
+  top: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #hero .btn-get-started:hover {
@@ -495,7 +704,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
-  margin-bottom: 5px;
+  margin-bottom: 2rem;
 }
 
 .section-header .section-description {
@@ -507,8 +716,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* About Us Section
 --------------------------------*/
 #about {
-  background: #fff;
-  padding: 80px 0;
+  background: #dde9f1;
+  /* padding: 80px 0; */
+  height: 100vh;
+  display: grid;
+  place-content: center;
 }
 
 #about .about-container .background {
@@ -518,13 +730,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-container .content {
-  background: #fff;
+  background: #dde9f1;
 }
 
 #about .about-container .title {
   color: #333;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 48px;
 }
 
 @media (max-width: 768px) {
@@ -733,6 +945,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #portfolio #portfolio-wrapper {
   padding-right: 15px;
+  max-width: 100%;
+  display: flex;
+  overflow: auto;
 }
 
 #portfolio #portfolio-flters {
@@ -765,7 +980,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #portfolio .portfolio-item {
   position: relative;
-  height: 200px;
+  height: 350px;
   overflow: hidden !important;
   margin-bottom: 15px;
   transition: all 350ms ease;
@@ -781,6 +996,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: relative;
   top: 0;
   transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  object-fit: cover !important;
+  min-width: 100%;
 }
 
 #portfolio .portfolio-item .details {
