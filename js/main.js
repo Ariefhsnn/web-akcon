@@ -4,6 +4,11 @@ jQuery(document).ready(function ($) {
     $("#overlay").toggleClass("open");
   });
 
+  $(".toggle-menu").click(function () {
+    $("#toggle").toggleClass("active");
+    $("#overlay").toggleClass("open");
+  });
+  
   $(".modal-handler").click(function () {
     let newTitle = $(this).attr("data-title");
     let newDescription = $(this).attr("data-description");
