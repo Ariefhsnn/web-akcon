@@ -4,6 +4,86 @@ jQuery(document).ready(function ($) {
     $("#overlay").toggleClass("open");
   });
 
+  $(".modal-handler").click(function () {
+    let newTitle = $(this).attr("data-title");
+    let newDescription = $(this).attr("data-description");
+    $("#myModalLabel").html(newTitle);
+    $("#myModalDescription").html(newDescription);
+  });
+
+  $("#about-description").click(function () {
+    let status = $(this).attr("data-status");
+    if (status === "complete") {
+      $(this).attr("data-status", "not-complete");
+      $(this).html(`<p
+                id="about-description"
+                class="text-justify animate__animated animate__fadeInRight"
+                data-status="not-complete"
+              >
+                PT Akses Connecting Nusaraya (AKCON) adalah perusahan yang
+                bergerak dalam layanan industri Telekomunikasi dan connectivity.
+                Dibidang telekomunikasi AKCON memberikan layanan SITAC (Site
+                Acquisition) , CME ( Civil, Mechanical, Electrical ), Manajemen
+                Proyek dan Pemeliharaan serta layanan Sistem Perusahaan...
+                <span
+                  style="text-decoration: underline; cursor: pointer"
+                  class="text-primary"
+                  >Selengkapnya</span
+                >
+              </p>`);
+    } else {
+      $(this).attr("data-status", "complete");
+      // Ubahnya disini ya ri untuk visi misi
+      $(this).html(`
+        <p
+        id="about-description"
+        class="text-justify animate__animated animate__fadeInRight"
+        data-status="complete"
+        >
+        PT Akses Connecting Nusaraya (AKCON) adalah perusahan yang
+        bergerak dalam layanan industri Telekomunikasi dan connectivity.
+        Dibidang telekomunikasi AKCON memberikan layanan SITAC (Site
+        Acquisition) , CME ( Civil, Mechanical, Electrical ), Manajemen
+        Proyek dan Pemeliharaan serta layanan Sistem Perusahaan Dibidang connectivity AKCON adalah perusahaan yang beroperasi sebagai partner resseler resmi starlink di indonesia, AKCON bersama resseler resmi Starlink menawarkan produk unggulan bernama SKYLINK, menyediakan layanan internet satelit berkecepatan tinggi dan andal yang dirancang khusus untuk memenuhi kebutuhan berbagai industri di Indonesia, termasuk maritim, transportasi, perkebunan, minyak dan gas, pertambangan, penerbangan, pemerintah, telekomunikasi, media, dan ritel.
+      </p>
+      <div class="row">
+        <div class="col-12 col-lg-6 animate__animated animate__fadeInLeft">
+          <h2 style="font-weight: 600;"> Vision <h2>
+          <p style="font-size: 16px"> 
+              Become  a  dynamic  and 
+              innovative company, become a 
+              partner of telecommunications 
+              service companies and provide 
+              sustainable added value for all 
+              communities and stakeholders. 
+          </p>
+        </div>
+        <div class="col-12 col-lg-6 animate__animated animate__fadeInRight">
+          <h2 style="font-weight: 600;"> Mission <h2>
+          <ol style="font-size: 16px; padding-left: 20px !important;">
+            <li style="margin-bottom: 5px"> Develop high quality services that meet
+                customer needs and expectations.
+            </li>
+            <li style="margin-bottom: 5px"> Drive innovation through continuous research and development to create better and more efficient solutions.</li>            
+            <li style="margin-bottom: 5px"> Drive innovation through continuous research and development to create better and more efficient solutions.</li>            
+            <li style="margin-bottom: 5px"> Drive innovation through continuous research and development to create better and more efficient solutions.</li>            
+            <li style="margin-bottom: 5px"> Drive innovation through continuous research and development to create better and more efficient solutions.</li>            
+            <li style="margin-bottom: 5px"> Drive innovation through continuous research and development to create better and more efficient solutions.</li>            
+            <li style="margin-bottom: 5px"> Drive innovation through continuous research and development to create better and more efficient solutions.</li>            
+            <li style="margin-bottom: 5px"> Drive innovation through continuous research and development to create better and more efficient solutions.</li>            
+          </ol>
+        </div>
+      </div>
+
+      <span
+          style="text-decoration: underline; cursor: pointer"
+          class="text-primary"
+          >Lebih sedikit</span
+        >
+      `);
+    }
+  });
+
   // Header fixed and Back to top button
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {

@@ -68,7 +68,12 @@
                 <li><a id="toggle" href="#hero">Home</a></li>
                 <li><a id="toggle" href="#about">About</a></li>
                 <li><a id="toggle" href="#services">Services</a></li>
-                <li><a id="toggle" href="#portfolio">Portfolio</a></li>
+                <li><a id="toggle" href="#portfolio">News</a></li>
+                <li><a id="toggle" href="#team">Partner</a></li>
+                <li><a id="toggle" href="#contact">Contact</a></li>
+                <li>
+                  <a id="toggle" href="https://mail.hostinger.com/">Webmail</a>
+                </li>
               </ul>
             </nav>
           </div>
@@ -139,20 +144,21 @@
               <h2 class="title animate__animated animate__fadeInLeft">
                 Few Words About Us
               </h2>
-              <p class="text-justify animate__animated animate__fadeInRight">
+              <p
+                id="about-description"
+                class="text-justify animate__animated animate__fadeInRight"
+                data-status="not-complete"
+              >
                 PT Akses Connecting Nusaraya (AKCON) adalah perusahan yang
                 bergerak dalam layanan industri Telekomunikasi dan connectivity.
                 Dibidang telekomunikasi AKCON memberikan layanan SITAC (Site
                 Acquisition) , CME ( Civil, Mechanical, Electrical ), Manajemen
-                Proyek dan Pemeliharaan serta layanan Sistem Perusahaan.
-                Dibidang connectivity AKCON adalah perusahaan yang beroperasi
-                sebagai partner resseler resmi starlink di indonesia, AKCON
-                bersama resseler resmi Starlink menawarkan produk unggulan
-                bernama SKYLINK, menyediakan layanan internet satelit
-                berkecepatan tinggi dan andal yang dirancang khusus untuk
-                memenuhi kebutuhan berbagai industri di Indonesia, termasuk
-                maritim, transportasi, perkebunan, minyak dan gas, pertambangan,
-                penerbangan, pemerintah, telekomunikasi, media, dan ritel.
+                Proyek dan Pemeliharaan serta layanan Sistem Perusahaan...
+                <span
+                  style="text-decoration: underline; cursor: pointer"
+                  class="text-primary"
+                  >Selengkapnya</span
+                >
               </p>
 
               <!-- <div class="icon-box wow fadeInUp">
@@ -194,17 +200,20 @@
       <!--==========================
       Facts Section
     ============================-->
-      <!-- <section id="facts">
+      <section id="facts">
         <div class="container wow fadeIn">
           <div class="section-header">
-            <h3 class="section-title">Facts</h3>
-            <p class="section-description">
+            <h3 class="section-title">
+              The Legality of <br />
+              PT. AKSES CONNECTING NUSARAYA (AKCON)
+            </h3>
+            <!-- <p class="section-description">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque
-            </p>
+            </p> -->
           </div>
           <div class="row counters">
-            <div class="col-lg-3 col-6 text-center">
+            <!-- <div class="col-lg-3 col-6 text-center">
               <span data-toggle="counter-up">232</span>
               <p>Clients</p>
             </div>
@@ -217,15 +226,21 @@
             <div class="col-lg-3 col-6 text-center">
               <span data-toggle="counter-up">1,463</span>
               <p>Hours Of Support</p>
-            </div>
+            </div> -->
 
-            <div class="col-lg-3 col-6 text-center">
-              <span data-toggle="counter-up">15</span>
-              <p>Hard Workers</p>
+            <div class="col-lg-12 col-6 text-center">
+              <!-- <span data-toggle="counter-up">2018</span> -->
+              <img
+                src="img/IMS.jpg"
+                alt="ims-icon"
+                srcset=""
+                style="width: 240px; height: auto; margin-bottom: 12px"
+              />
+              <p>AKCON has obtained certification for ISO 45001-2018</p>
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- #facts -->
 
       <!--==========================
@@ -247,42 +262,68 @@
           </div>
           <div class="row">
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-              <div class="box">
+              <button
+                type="button"
+                class="box modal-handler"
+                data-toggle="modal"
+                data-target="#myModal"
+                data-title="Tower Telco"
+                data-description="AKCON is proud to present our Site Acquisition (SITAC)
+                service, which is specifically designed to support the
+                development of 4G and 5G telecommunications technology."
+              >
                 <div class="icon">
-                  <a href=""><i class="fa fa-desktop"></i></a>
+                  <i class="fa fa-desktop"></i>
                 </div>
-                <h4 class="title"><a href="">TOWER TELCO</a></h4>
+                <h4 class="title">TOWER TELCO</h4>
                 <p class="description">
                   AKCON is proud to present our Site Acquisition (SITAC)
-                  service, which is specifically designed to support the
-                  development of 4G and 5G telecommunications technology.
+                  service, which is specifically designed...
                 </p>
-              </div>
+              </button>
             </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
-              <div class="box">
+              <button
+                class="box modal-handler"
+                type="button"
+                class="box"
+                data-toggle="modal"
+                data-target="#myModal"
+                data-title="Internet Connectivity"
+                data-description="Also handles civil, mechanical and electrical
+                telecommunication tower construction work according to
+                customer needs"
+              >
                 <div class="icon">
                   <a href=""><i class="fa fa-bar-chart"></i></a>
                 </div>
                 <h4 class="title"><a href="">INTERNET CONNECTIVITY</a></h4>
                 <p class="description">
-                  also handles civil, mechanical and electrical
-                  telecommunication tower construction work according to
-                  customer needs
+                  Also handles civil, mechanical and electrical
+                  telecommunication tower construction...
                 </p>
-              </div>
+              </button>
             </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-              <div class="box">
+              <button
+                class="box modal-handler"
+                type="button"
+                class="box"
+                data-toggle="modal"
+                data-target="#myModal"
+                data-title="Enterprise System"
+                data-description="Projects manages the entire process to enable efficient and
+              effective implementation of services"
+              >
                 <div class="icon">
                   <a href=""><i class="fa fa-paper-plane"></i></a>
                 </div>
                 <h4 class="title"><a href="">ENTERPRISE SYSTEM </a></h4>
                 <p class="description">
                   Projects manages the entire process to enable efficient and
-                  effective implementation of services
+                  effective implementation of...
                 </p>
-              </div>
+              </button>
             </div>
 
             <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
@@ -338,7 +379,7 @@
       <!-- #call-to-action -->
 
       <!--==========================
-      Portfolio Section
+      News Section
     ============================-->
       <section id="portfolio">
         <div class="container wow fadeInUp">
@@ -349,216 +390,297 @@
               accusantium doloremque
             </p> -->
           </div>
-          <!-- <div class="row">
-            <div class="col-lg-12">
-              <ul id="portfolio-flters">
-                <li
-                  data-filter=".filter-app, .filter-card, .filter-logo, .filter-web"
-                  class="filter-active"
+          <div id="portfolio-wrapper">
+            <div class="card">
+              <img
+                src="img/portfolio/portofolio-1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Perusahaan Bidang Tambang, Komunikasi dan Properti Bangun
+                  Kemitraan Strategis
+                </h5>
+                <!-- <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p> -->
+                <a
+                  target="_blank"
+                  href="https://www.gatra.com/news-593400-ekonomi-perusahaan-bidang-tambang-komunikasi-dan-properti-bangun-kemitraan-strategis.html"
+                  class="btn btn-primary"
+                  >Read More</a
                 >
-                  All
-                </li>
-                <li data-filter=".filter-app">App</li>
-                <li data-filter=".filter-card">Card</li>
-                <li data-filter=".filter-logo">Logo</li>
-                <li data-filter=".filter-web">Web</li>
-              </ul>
+              </div>
             </div>
-          </div> -->
 
-          <div class="row" id="portfolio-wrapper">
+            <div class="card">
+              <img
+                src="img/portfolio/portfolio-2.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  AKCON dan SKYLINK Tandatangani Perjanjian Kerjasama Strategis
+                </h5>
+                <!-- <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p> -->
+                <a
+                  target="_blank"
+                  href="https://beritapagi.co.id/2024/09/22/akcon-dan-skylink-tandatangani-perjanjian-kerjasama-strategis/#google_vignette"
+                  class="btn btn-primary"
+                  >Read More</a
+                >
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                src="img/portfolio/portfolio-3.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  BPOLBF Lakukan MOU Bersama Investor Semesta Indo Resort dan
+                  ACKON
+                </h5>
+                <!-- <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p> -->
+                <a
+                  target="_blank"
+                  href="https://www.rri.co.id/ende/daerah/889257/bpolbf-lakukan-mou-bersama-investor-semesta-indo-resort-dan-ackon"
+                  class="btn btn-primary"
+                  >Read More</a
+                >
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                src="img/portfolio/portfolio-4.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Indosat Ooredoo Hutchison dan PT Akses Connecting Nusaraya
+                  Tandatangani Perjanjian Kerjasama di Bidang Enterprise
+                </h5>
+                <!-- <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p> -->
+                <a
+                  target="_blank"
+                  href="https://jurnalpost.com/indosat-ooredoo-hutchison-dan-pt-akses-connecting-nusaraya-tandatangani-perjanjian-kerjasama-di-bidang-enterprise/71493/"
+                  class="btn btn-primary"
+                  >Read More</a
+                >
+              </div>
+            </div>
+
+            <!-- <div class="col-lg-6 col-md-6 portfolio-item filter-app">              
+            
+
             <div class="col-lg-6 col-md-6 portfolio-item filter-app">
-              <a
-                href="https://www.gatra.com/news-593400-ekonomi-perusahaan-bidang-tambang-komunikasi-dan-properti-bangun-kemitraan-strategis.html"
-                target="_blank"
-              >
-                <img src="img/portfolio/portofolio-1.jpg" alt="" />
-                <div class="details">
-                  <h4>App 1</h4>
-                  <span>Alored dono par</span>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-lg-6 col-md-6 portfolio-item filter-web">
               <a href="">
-                <img src="img/portfolio/web2.jpg" alt="" />
+                <img src="img/portfolio/portfolio-3.jpeg" alt="" />
                 <div class="details">
-                  <h4>Web 2</h4>
-                  <span>Alored dono par</span>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-lg-6 col-md-6 portfolio-item filter-app">
-              <a href="">
-                <img src="img/portfolio/app3.jpg" alt="" />
-                <div class="details">
-                  <h4>App 3</h4>
-                  <span>Alored dono par</span>
+                  <h4>
+                    BPOLBF Lakukan MOU Bersama Investor Semesta Indo Resort dan
+                    ACKON
+                  </h4>
                 </div>
               </a>
             </div>
 
             <div class="col-lg-6 col-md-6 portfolio-item filter-card">
               <a href="">
-                <img src="img/portfolio/card1.jpg" alt="" />
+                <img src="img/portfolio/portfolio-4.webp" alt="" />
                 <div class="details">
-                  <h4>Card 1</h4>
-                  <span>Alored dono par</span>
+                  <h4>
+                    Indosat Ooredoo Hutchison dan PT Akses Connecting Nusaraya
+                    Tandatangani Perjanjian Kerjasama di Bidang Enterprise
+                  </h4>
                 </div>
               </a>
-            </div>
-
-            <div class="col-lg-6 col-md-6 portfolio-item filter-card">
-              <a href="">
-                <img src="img/portfolio/card2.jpg" alt="" />
-                <div class="details">
-                  <h4>Card 2</h4>
-                  <span>Alored dono par</span>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-lg-6 col-md-6 portfolio-item filter-web">
-              <a href="">
-                <img src="img/portfolio/web3.jpg" alt="" />
-                <div class="details">
-                  <h4>Web 3</h4>
-                  <span>Alored dono par</span>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-lg-6 col-md-6 portfolio-item filter-card">
-              <a href="">
-                <img src="img/portfolio/card3.jpg" alt="" />
-                <div class="details">
-                  <h4>Card 3</h4>
-                  <span>Alored dono par</span>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-lg-6 col-md-6 portfolio-item filter-app">
-              <a href="">
-                <img src="img/portfolio/app2.jpg" alt="" />
-                <div class="details">
-                  <h4>App 2</h4>
-                  <span>Alored dono par</span>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-lg-6 col-md-6 portfolio-item filter-logo">
-              <a href="">
-                <img src="img/portfolio/logo1.jpg" alt="" />
-                <div class="details">
-                  <h4>Logo 1</h4>
-                  <span>Alored dono par</span>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-lg-6 col-md-6 portfolio-item filter-logo">
-              <a href="">
-                <img src="img/portfolio/logo3.jpg" alt="" />
-                <div class="details">
-                  <h4>Logo 3</h4>
-                  <span>Alored dono par</span>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-lg-6 col-md-6 portfolio-item filter-web">
-              <a href="">
-                <img src="img/portfolio/web1.jpg" alt="" />
-                <div class="details">
-                  <h4>Web 1</h4>
-                  <span>Alored dono par</span>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-lg-6 col-md-6 portfolio-item filter-logo">
-              <a href="">
-                <img src="img/portfolio/logo2.jpg" alt="" />
-                <div class="details">
-                  <h4>Logo 2</h4>
-                  <span>Alored dono par</span>
-                </div>
-              </a>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
       <!-- #portfolio -->
 
       <!--==========================
-      Team Section
+      Partner Section
     ============================-->
       <section id="team">
         <div class="container wow fadeInUp">
           <div class="section-header">
             <h3 class="section-title">Partner</h3>
-            <p class="section-description">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque
-            </p>
           </div>
           <div class="row">
             <div class="col-lg-3 col-md-6">
               <div class="member">
-                <div class="pic"><img src="img/team-1.jpg" alt="" /></div>
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-                <div class="social">
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-google-plus"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
+                <div class="pic">
+                  <img src="img/Kemenparekraf.png" alt="team-1" />
                 </div>
+                <h4>Kemenparekraf</h4>
+                <!-- <span>Chief Executive Officer</span> -->
+                <!-- <div class="social">
+                  <a target="_blank" href="https://x.com/Kemenparekraf"
+                    ><i class="fa fa-twitter"></i
+                  ></a>
+                  <a target="_blank" href="https://www.facebook.com/ParekrafRI"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/kemenparekraf.ri/"
+                    ><i class="fa fa-instagram"></i
+                  ></a>
+                </div> -->
               </div>
             </div>
 
             <div class="col-lg-3 col-md-6">
               <div class="member">
-                <div class="pic"><img src="img/team-2.jpg" alt="" /></div>
-                <h4>Sarah Jhinson</h4>
-                <span>Product Manager</span>
-                <div class="social">
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-google-plus"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
-                </div>
+                <div class="pic"><img src="img/Kemendes.png" alt="" /></div>
+                <h4>Kemendes</h4>
+                <!-- <span>Product Manager</span> -->
+                <!-- <div class="social">
+                  <a target="_blank" href="https://x.com/ditjenppktrans"
+                    ><i class="fa fa-twitter"></i
+                  ></a>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/kemendespdtt"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/kemendespdtt"
+                    ><i class="fa fa-instagram"></i
+                  ></a>
+                </div> -->
               </div>
             </div>
 
             <div class="col-lg-3 col-md-6">
               <div class="member">
-                <div class="pic"><img src="img/team-3.jpg" alt="" /></div>
-                <h4>William Anderson</h4>
-                <span>CTO</span>
-                <div class="social">
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-google-plus"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
+                <div class="pic">
+                  <img src="img/kemendagri-logo.png" alt="" />
                 </div>
+                <h4>Kemendagri</h4>
+                <!-- <span>Product Manager</span> -->
+                <!-- <div class="social">
+                  <a target="_blank" href="https://x.com/ditjenppktrans"
+                    ><i class="fa fa-twitter"></i
+                  ></a>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/kemendespdtt"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/kemendespdtt"
+                    ><i class="fa fa-instagram"></i
+                  ></a>
+                </div> -->
               </div>
             </div>
 
             <div class="col-lg-3 col-md-6">
               <div class="member">
-                <div class="pic"><img src="img/team-4.jpg" alt="" /></div>
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-                <div class="social">
+                <div class="pic">
+                  <img src="img/PT.Pam_mineral.png" alt="" />
+                </div>
+                <h4>PAM</h4>
+                <!-- <span>CTO</span> -->
+                <!-- <div class="social">
+                  <a target="_blank" href=""><i class="fa fa-twitter"></i></a>
+                  <a target="_blank" href=""><i class="fa fa-facebook"></i></a>
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/pammineral.official"
+                    ><i class="fa fa-instagram"></i
+                  ></a>
+                </div> -->
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="member">
+                <div class="pic"><img src="img/Edotco.png" alt="" /></div>
+                <h4>Edotco</h4>
+                <!-- <span>Accountant</span> -->
+                <!-- <div class="social">
                   <a href=""><i class="fa fa-twitter"></i></a>
                   <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-google-plus"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
+                  <a href=""><i class="fa fa-instagram"></i></a>
+                </div> -->
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="member">
+                <div class="pic"><img src="img/IOH.jfif" alt="" /></div>
+                <h4>Indosat</h4>
+                <!-- <span>Accountant</span> -->
+                <!-- <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-instagram"></i></a>
+                </div> -->
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="member">
+                <div class="pic"><img src="img/Fiberhome.jfif" alt="" /></div>
+                <h4>Fiber Home</h4>
+                <!-- <span>Accountant</span> -->
+                <!-- <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-instagram"></i></a>
+                </div> -->
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="member">
+                <div class="pic"><img src="img/Starlink.png" alt="" /></div>
+                <h4>Starlink</h4>
+                <!-- <span>Accountant</span> -->
+                <!-- <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-instagram"></i></a>
+                </div> -->
+              </div>
+            </div>
+
+            <div
+              class="flex col-lg-12 col-md-6 justify-content-center w-100 mx-auto"
+            >
+              <div style="width: 25%; margin: auto">
+                <div class="member">
+                  <div class="pic"><img src="img/Skylink.jfif" alt="" /></div>
+                  <h4>Skylink</h4>
+                  <!-- <span>Accountant</span> -->
+                  <!-- <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-instagram"></i></a>
+                </div> -->
                 </div>
               </div>
             </div>
@@ -607,16 +729,16 @@
 
                 <div>
                   <i class="fa fa-envelope"></i>
-                  <p>sample@akcon.co.id</p>
+                  <p>connection@akcon.co.id</p>
                 </div>
 
                 <div>
                   <i class="fa fa-phone"></i>
-                  <p>+1 5589 55488 55s</p>
+                  <p>02127842429</p>
                 </div>
               </div>
 
-              <div class="social-links">
+              <!-- <div class="social-links">
                 <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                 <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
                 <a href="#" class="instagram"
@@ -626,7 +748,7 @@
                   ><i class="fa fa-google-plus"></i
                 ></a>
                 <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-              </div>
+              </div> -->
             </div>
 
             <div class="col-lg-5 col-md-8">
@@ -635,7 +757,7 @@
                   Your message has been sent. Thank you!
                 </div>
                 <div id="errormessage"></div>
-                <form action="" method="post" role="form" class="contactForm">
+                <form method="get" role="form" class="contactForm">
                   <div class="form-group">
                     <input
                       type="text"
@@ -674,6 +796,7 @@
                   </div>
                   <div class="form-group">
                     <textarea
+                      id="message"
                       class="form-control"
                       name="message"
                       rows="5"
@@ -694,6 +817,27 @@
       </section>
       <!-- #contact -->
     </main>
+
+    <!-- Modal Section Start -->
+    <div
+      class="modal fade"
+      id="myModal"
+      tabindex="-1"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="myModalLabel"></h5>
+          </div>
+          <div class="modal-body">
+            <p id="myModalDescription"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Section End -->
 
     <!--==========================
     Footer
