@@ -1,0 +1,62 @@
+{
+  "Accordionmission": {
+    "description": "Auto imported from components/Accordionmission.vue"
+  },
+  "Accordionservices": {
+    "description": "Auto imported from components/Accordionservices.vue"
+  },
+  "ClientLogo": {
+    "description": "Auto imported from components/ClientLogo.vue"
+  },
+  "Contentcard": {
+    "description": "Auto imported from components/Contentcard.vue"
+  },
+  "Contentcard2": {
+    "description": "Auto imported from components/Contentcard2.vue"
+  },
+  "DesignContent": {
+    "description": "Auto imported from components/DesignContent.vue"
+  },
+  "Footer": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "Hero": {
+    "description": "Auto imported from components/Hero.vue"
+  },
+  "Label": {
+    "description": "Auto imported from components/Label.vue"
+  },
+  "Members": {
+    "description": "Auto imported from components/Members.vue"
+  },
+  "Membersgrid": {
+    "description": "Auto imported from components/Membersgrid.vue"
+  },
+  "Minititle": {
+    "description": "Auto imported from components/Minititle.vue"
+  },
+  "Modal": {
+    "description": "Auto imported from components/Modal.vue"
+  },
+  "NavButton": {
+    "description": "Auto imported from components/NavButton.vue"
+  },
+  "Navigation": {
+    "description": "Auto imported from components/Navigation.vue"
+  },
+  "Projectcard": {
+    "description": "Auto imported from components/Projectcard.vue"
+  },
+  "Servicecard": {
+    "description": "Auto imported from components/Servicecard.vue"
+  },
+  "Technologyuse": {
+    "description": "Auto imported from components/Technologyuse.vue"
+  },
+  "Title": {
+    "description": "Auto imported from components/Title.vue"
+  },
+  "TitleContainer": {
+    "description": "Auto imported from components/TitleContainer.vue"
+  }
+}

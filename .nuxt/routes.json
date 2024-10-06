@@ -1,0 +1,93 @@
+[
+  {
+    "name": "approach",
+    "path": "/approach",
+    "component": "/Users/ariefhsnn/Documents/Project/Web/web-akcon/pages/approach/index.vue",
+    "chunkName": "pages/approach/index",
+    "_name": "_3801f731"
+  },
+  {
+    "name": "contact",
+    "path": "/contact",
+    "component": "/Users/ariefhsnn/Documents/Project/Web/web-akcon/pages/contact.vue",
+    "chunkName": "pages/contact",
+    "_name": "_68561c0a"
+  },
+  {
+    "name": "index2",
+    "path": "/index2",
+    "component": "/Users/ariefhsnn/Documents/Project/Web/web-akcon/pages/index2.vue",
+    "chunkName": "pages/index2",
+    "_name": "_03ee8ca6"
+  },
+  {
+    "name": "portofolio",
+    "path": "/portofolio",
+    "component": "/Users/ariefhsnn/Documents/Project/Web/web-akcon/pages/portofolio/index.vue",
+    "chunkName": "pages/portofolio/index",
+    "_name": "_2607ee24"
+  },
+  {
+    "name": "us",
+    "path": "/us",
+    "component": "/Users/ariefhsnn/Documents/Project/Web/web-akcon/pages/us.vue",
+    "chunkName": "pages/us",
+    "_name": "_61ab61a4"
+  },
+  {
+    "name": "product-designandDiscovery",
+    "path": "/product/designandDiscovery",
+    "component": "/Users/ariefhsnn/Documents/Project/Web/web-akcon/pages/product/designandDiscovery.vue",
+    "chunkName": "pages/product/designandDiscovery",
+    "_name": "_32557ffd"
+  },
+  {
+    "name": "product-development",
+    "path": "/product/development",
+    "component": "/Users/ariefhsnn/Documents/Project/Web/web-akcon/pages/product/development.vue",
+    "chunkName": "pages/product/development",
+    "_name": "_0144ef85"
+  },
+  {
+    "name": "product-support",
+    "path": "/product/support",
+    "component": "/Users/ariefhsnn/Documents/Project/Web/web-akcon/pages/product/support.vue",
+    "chunkName": "pages/product/support",
+    "_name": "_6efe5dce"
+  },
+  {
+    "name": "product-tailoringandIntegration",
+    "path": "/product/tailoringandIntegration",
+    "component": "/Users/ariefhsnn/Documents/Project/Web/web-akcon/pages/product/tailoringandIntegration.vue",
+    "chunkName": "pages/product/tailoringandIntegration",
+    "_name": "_12709e54"
+  },
+  {
+    "name": "services-productdevelopment",
+    "path": "/services/productdevelopment",
+    "component": "/Users/ariefhsnn/Documents/Project/Web/web-akcon/pages/services/productdevelopment.vue",
+    "chunkName": "pages/services/productdevelopment",
+    "_name": "_0b2fdab2"
+  },
+  {
+    "name": "services-productdnd",
+    "path": "/services/productdnd",
+    "component": "/Users/ariefhsnn/Documents/Project/Web/web-akcon/pages/services/productdnd.vue",
+    "chunkName": "pages/services/productdnd",
+    "_name": "_3efaf1f4"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/ariefhsnn/Documents/Project/Web/web-akcon/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_1044b788"
+  },
+  {
+    "name": "portofolio-id",
+    "path": "/portofolio/:id",
+    "component": "/Users/ariefhsnn/Documents/Project/Web/web-akcon/pages/portofolio/_id.vue",
+    "chunkName": "pages/portofolio/_id",
+    "_name": "_7a43298c"
+  }
+]
